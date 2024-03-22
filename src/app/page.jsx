@@ -78,7 +78,7 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Creativity In <br/>Our Blood Line"
+        title={"<div style=\"line-height:80px;\">#Hlo Ventures<div></div><span style=\"font-size:40px\">Since 2016</span></div>"}
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         btnText="Get a Quote"
         btnLink="/contact"
