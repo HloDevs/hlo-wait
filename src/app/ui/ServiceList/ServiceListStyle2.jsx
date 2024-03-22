@@ -4,25 +4,37 @@ import Div from '../Div';
 import './servicelist.scss';
 const serviceData = [
   {
-    title: 'WP Development',
+    title: 'ROOK',
     subtitle:
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
     href: '/service/service-details',
   },
   {
-    title: 'UI/UX Design',
+    title: 'ROOK FELLOWS',
     subtitle:
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
     href: '/service/service-details',
   },
   {
-    title: 'Branding',
+    title: 'ROOK DOMAINS',
     subtitle:
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
     href: '/service/service-details',
   },
   {
-    title: 'Social Ad Campaign',
+    title: 'STARTUP FELLOWS',
+    subtitle:
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+    href: '/service/service-details',
+  },
+  {
+    title: 'LEGACIES',
+    subtitle:
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+    href: '/service/service-details',
+  },
+  {
+    title: 'MY PRO BUDDY',
     subtitle:
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
     href: '/service/service-details',
