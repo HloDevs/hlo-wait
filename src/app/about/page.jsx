@@ -59,7 +59,7 @@ export default function AboutPage() {
                 This is the main factor that sets us apart from our competition
                 and allows us to deliver a specialist business consultancy
                 service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
+                determining. Through our years of experience, we've also learned
                 that while each channel.
               </p>
               <Spacing lg="30" md="30" />
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 This is the main factor that sets us apart from our competition
                 and allows us to deliver a specialist business consultancy
                 service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
+                determining. Through our years of experience, we've also learned
                 that while each channel.
               </p>
               <Spacing lg="15" md="15" />
@@ -168,7 +168,7 @@ export default function AboutPage() {
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

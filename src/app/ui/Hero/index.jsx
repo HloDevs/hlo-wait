@@ -19,7 +19,7 @@ export default function Hero({
   return (
     <Div
       className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1"
-      style={{ backgroundImage: `url(${bgImageUrl})` }}
+      style={{ backgroundImage: `url(${bgImageUrl})`, paddingBottom: '0px' }}
     >
       <Div className="cs-shape_1" />
       <Div className="cs-shape_1" />

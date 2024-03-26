@@ -5,97 +5,7 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
 import Team from "@/app/ui/Team";
-
-const teamData = [
-  {
-    memberImage: '/images/member_1.jpeg',
-    memberName: 'Melon Bulgery',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_2.jpeg',
-    memberName: 'Olinaz Fushi',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_3.jpeg',
-    memberName: 'David Elone',
-    memberDesignation: 'React Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_4.jpeg',
-    memberName: 'Melina Opole',
-    memberDesignation: 'WP Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_3.jpeg',
-    memberName: 'David Elone',
-    memberDesignation: 'React Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_4.jpeg',
-    memberName: 'Melina Opole',
-    memberDesignation: 'WP Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_1.jpeg',
-    memberName: 'Melon Bulgery',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_2.jpeg',
-    memberName: 'Olinaz Fushi',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-];
+import teamData from "./userInfo.json";
 
 export default function TeamPage() {
   return (
@@ -114,13 +24,14 @@ export default function TeamPage() {
         />
         <Spacing lg="90" md="45" />
         <Div className="row">
-          {teamData.map((item, index) => (
+          {teamData.team.map((item, index) => (
             <Div key={index} className="col-lg-3 col-sm-6">
               <Team
-                memberImage={item.memberImage}
-                memberName={item.memberName}
-                memberDesignation={item.memberDesignation}
-                memberSocial={item.memberSocial}
+                memberImage={item.image}
+                memberName={item.name}
+                memberDesignation={item.designation}
+                memberSocial={item.social}
+                memberLink={item.link}
               />
               <Spacing lg="80" md="30" />
             </Div>
@@ -129,7 +40,7 @@ export default function TeamPage() {
         <Spacing lg="70" md="50" />
         <Div className="container">
           <Cta
-            title="Let’s disscuse make <br />something <i>cool</i> together"
+            title="Let's disscuse make <br />something <i>cool</i> together"
             btnText="Apply For Meeting"
             btnLink="/contact"
             bgSrc="/images/cta_bg.jpeg"
