@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model WaitlistAccount {
+  id         String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email      String            @unique
+  handle     String?           @unique
+  verifiedAt DateTime?         @map("verified_at") @db.Timestamptz(6)
+  createdAt  DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  sessions   WaitlistSession[]
+
+  @@map("waitlist_accounts")
+}
+
+model WaitlistCode {
+  email     String   @id
+  code      String
+  attempts  Int      @default(0)
+  expiresAt DateTime @map("expires_at") @db.Timestamptz(6)
+
+  @@map("waitlist_codes")
+}
+
+model WaitlistSession {
+  token     String          @id
+  accountId String          @map("account_id") @db.Uuid
+  expiresAt DateTime        @map("expires_at") @db.Timestamptz(6)
+  account   WaitlistAccount @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@index([expiresAt])
+  @@map("waitlist_sessions")
+}
