@@ -5,9 +5,12 @@ export const metadata: Metadata = {
   title: "Hlo | Claim your handle",
   description: "Claim your place on Hlo.",
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png", sizes: "any" }],
-    shortcut: ["/favicon.png"],
-    apple: [{ url: "/favicon.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
