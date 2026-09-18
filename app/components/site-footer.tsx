@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear();
 
 export function SiteFooter() {
   return <footer className="site-footer">
-    <Image className="footer-art" src="/images/footer/hlo-footer.webp" alt="" fill sizes="100vw" />
+    <Image className="footer-art" src="/images/footer/hlo-new-footer.webp" alt="" fill sizes="100vw" />
     <div className="footer-shade" />
     <div className="footer-content">
       <div className="footer-intro"><div className="footer-hlo"><Image src="/favicon.png" width={46} height={46} alt="" /><span>Hlo</span></div><p>A name for what comes next.</p></div>

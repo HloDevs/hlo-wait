@@ -210,3 +210,9 @@
 .footer-legal .footer-ownership span { color:rgba(30,41,56,.78); }
 .footer-legal a { color:#1f2a39; font-weight:600; }.footer-legal a:hover { color:#9d2632; opacity:1; }
 @media (max-width:700px) { .footer-shade { background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.12)); }.footer-links a { font-size:20px; }.footer-legal { color:rgba(30,41,56,.82); font-size:12px; }.footer-legal .footer-ownership span { color:rgba(30,41,56,.82); } }
+
+/* The legal line is deliberately quiet and warm against the footer artwork. */
+.footer-legal,
+.footer-legal .footer-ownership span,
+.footer-legal a { color:#e7d1ae; }
+.footer-legal a:hover { color:#fff1d7; }
